@@ -1,0 +1,35 @@
+# Environments & Virtualenv
+venv/
+.venv/
+env/
+ENV/
+*.env
+.env.local
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Archives & Temporary files
+*.zip
+*.tar.gz
+*.tmp
+*.temp
+/tmp/
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+.~lock.*#
