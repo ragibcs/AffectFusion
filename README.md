@@ -126,7 +126,7 @@ All dataset files (`.csv` and `.xlsx`) strictly adhere to the unified 20-column 
 
 ### 1. Clone Repository & Setup Virtual Environment
 ```bash
-git clone https://github.com/<your-username>/AffectFusion.git
+git clone https://github.com/ragibcs/AffectFusion.git
 cd AffectFusion
 
 python3 -m venv venv
