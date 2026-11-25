@@ -3,10 +3,12 @@ venv/
 .venv/
 env/
 ENV/
+.env
 *.env
 .env.local
+!.env.example
 
-# Python cache & artifacts
+# Python cache & build artifacts
 __pycache__/
 *.py[cod]
 *$py.class
@@ -14,22 +16,43 @@ __pycache__/
 .pytest_cache/
 .coverage
 htmlcov/
+.ipynb_checkpoints/
 
-# Archives & Temporary files
+# Large Model Weights & Binary Checkpoints (hosted externally on Drive / HF)
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.onnx
+*.h5
+checkpoints/
+
+# Raw Scrape State & Shards
+*.sqlite
+*.sqlite3
+*.jsonl
+01_raw_shards/
+03_gemini_labeled_shards/
+
+# Archives & Temporary Files
 *.zip
 *.tar.gz
+*.7z
 *.tmp
 *.temp
 /tmp/
 
-# IDE & Editors
+# Office Lock Files & OS/IDE Artifacts
+.~lock.*#
+~$*.docx
+~$*.pptx
+~$*.xlsx
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 .DS_Store
-
-# Logs
+Thumbs.db
 *.log
-.~lock.*#
