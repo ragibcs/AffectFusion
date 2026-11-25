@@ -1,0 +1,87 @@
+================================================================================
+AFFECTFUSION MULTIMODAL EMOTION ANNOTATION - FULL 100,652 DATASET SUMMARY
+================================================================================
+Timestamp: 2026-09-25 18:39:07 UTC
+Pipeline Status: PASS
+Total Processing Time: 29.2 seconds
+
+1. DATASET OVERVIEW & INTEGRITY
+--------------------------------------------------------------------------------
+Total Processed Rows:              100,652
+Synthetic Rows Generated:          0 (STRICT ZERO-SYNTHETIC DATA INTEGRITY)
+Original Comments Preserved:       100,652 (100.0%)
+Original Emojis Preserved:         100,652 (100.0%)
+Pass 2 Dry-Run Rows Preserved:     100 / 100 (100.0% exact ID match)
+Rows with Emojis (has_emoji = 1):  46,204 (45.90%)
+Rows without Emojis (has_emoji=0): 54,448 (54.10%)
+
+Source Corpora Breakdown:
+  - Bangla_YouTube (YouTube):      30,000 rows (15,000 emoji / 15,000 no-emoji)
+  - Banglish_YouTube (YouTube):    30,000 rows (15,000 emoji / 15,000 no-emoji)
+  - English_YouTube (YouTube):     30,000 rows (15,000 emoji / 15,000 no-emoji)
+  - All_Reddit (Reddit):           10,652 rows ( 1,204 emoji /  9,448 no-emoji)
+
+Platform Breakdown:
+  - YouTube:                       90,000 rows (89.42%)
+  - Reddit:                        10,652 rows (10.58%)
+
+2. PRIMARY EMOTION DISTRIBUTION (9 DIMENSIONS)
+--------------------------------------------------------------------------------
+     emotion  primary_count  primary_pct  secondary_count  secondary_pct  mean_intensity
+         Joy          21722       21.581            15662         15.561          0.2563
+     Sadness           7098        7.052              842          0.837          0.0716
+       Anger           3134        3.114              889          0.883          0.0295
+        Fear            761        0.756              237          0.235          0.0095
+    Surprise            791        0.786              496          0.493          0.0130
+     Disgust           3368        3.346             1892          1.880          0.0394
+        Love          16780       16.671             2699          2.682          0.1528
+Anticipation             69        0.069               31          0.031          0.0104
+     Neutral          46929       46.625                0          0.000          0.4159
+
+3. SECONDARY EMOTION RULE & CO-ACTIVATION
+--------------------------------------------------------------------------------
+Rows with Secondary Emotion (>=0.40): 22,748 (22.60%)
+Rows with No Secondary Emotion (NONE): 77,904 (77.40%)
+Numeric Argmax Mismatches:            0 (100.0% primary_emotion == primary_emotion_numeric)
+Secondary Emotion < 0.40 Violations:  0
+
+4. SARCASM & TEXT-EMOJI CONTRADICTION
+--------------------------------------------------------------------------------
+Total Sarcasm Positive (Sarcasm = 1): 6,010 (5.97%)
+  - High Confidence Sarcasm (>=0.70): 3,200
+  - Low Confidence Sarcasm (<0.70):  2,810 (ALL routed to REVIEW queue)
+
+Text-Emoji Relational Modality Breakdown:
+text_emoji_relation
+text_only        54635
+reinforcing      40975
+contradictory     3376
+ambiguous         1666
+
+5. QUALITY ASSURANCE & HUMAN REVIEW QUEUE
+--------------------------------------------------------------------------------
+Approved Rows (qa_flag = OK):         92,916 (92.31%)
+Human Review Queue (qa_flag = REVIEW): 7,736 (7.69%)
+Saved to File: AffectFusion_100652_human_review_queue.csv
+
+6. PASS 2 VALIDATION ASSERTIONS
+--------------------------------------------------------------------------------
+[PASS] Total Row Count == 100,652
+[PASS] Synthetic Rows == 0
+[PASS] ID Integrity & Mapping == 100,652 unique raw IDs preserved
+[PASS] Argmax Invariant (primary_emotion == primary_emotion_numeric) Mismatches: 0
+[PASS] Secondary Emotion >= 0.40 Rule Violations: 0
+[PASS] Neutral Filler Score Violations: 0
+[PASS] Low Confidence Sarcasm Unreviewed Violations: 0
+[PASS] 100 Validated Pass-2 Dry-Run Rows Preserved Verbatim: 100/100
+Total Validation Errors: 0
+
+================================================================================
+FULL DATASET PROCESSING STATUS: PASS
+================================================================================
+TOTAL ROWS: 100,652
+SYNTHETIC ROWS: 0
+ANNOTATED ROWS: 100,652
+REVIEW ROWS: 7,736
+VALIDATION ERRORS: 0
+================================================================================
