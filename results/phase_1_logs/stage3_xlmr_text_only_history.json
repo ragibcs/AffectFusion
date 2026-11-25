@@ -1,0 +1,44 @@
+{
+  "model": "Baseline B: XLM-R Text-Only",
+  "use_demoji": false,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 1.7448,
+      "train_accuracy": 0.3888,
+      "val_loss": 1.5387,
+      "val_accuracy": 0.5123,
+      "val_macro_f1": 0.4954,
+      "val_micro_f1": 0.5123,
+      "val_weighted_f1": 0.4922,
+      "epoch_time_sec": 202.7,
+      "peak_vram_gb": 5.23
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.3099,
+      "train_accuracy": 0.5854,
+      "val_loss": 1.4621,
+      "val_accuracy": 0.54,
+      "val_macro_f1": 0.5246,
+      "val_micro_f1": 0.54,
+      "val_weighted_f1": 0.5228,
+      "epoch_time_sec": 210.1,
+      "peak_vram_gb": 5.23
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.1512,
+      "train_accuracy": 0.6474,
+      "val_loss": 1.4484,
+      "val_accuracy": 0.5597,
+      "val_macro_f1": 0.5462,
+      "val_micro_f1": 0.5597,
+      "val_weighted_f1": 0.5445,
+      "epoch_time_sec": 231.9,
+      "peak_vram_gb": 5.23
+    }
+  ],
+  "best_val_macro_f1": 0.5462,
+  "best_epoch": 3
+}

@@ -1,0 +1,86 @@
+{
+  "xlmr_fusion_vs_xlmr_text_ALL_3000": {
+    "comparison": "XLM-R Early Fusion vs. XLM-R Text-Only",
+    "n_samples": 3000,
+    "acc_A": 0.545,
+    "acc_B": 0.6407,
+    "acc_delta_B_minus_A": 0.0957,
+    "paired_t_stat": 10.5661,
+    "paired_t_pvalue": 0.0,
+    "significant_at_0_05_ttest": true,
+    "mcnemar_B_right_A_wrong": 526,
+    "mcnemar_A_right_B_wrong": 239,
+    "mcnemar_chi2": 106.9229,
+    "mcnemar_pvalue": 0.0,
+    "macro_f1_A": 0.5341,
+    "macro_f1_B": 0.6366,
+    "macro_f1_delta": 0.1025,
+    "macro_f1_delta_95ci": [
+      0.0846,
+      0.1198
+    ]
+  },
+  "xlmr_fusion_vs_xlmr_text_EMOJI_ONLY": {
+    "comparison": "XLM-R Early Fusion vs. XLM-R Text-Only",
+    "n_samples": 1974,
+    "acc_A": 0.5187,
+    "acc_B": 0.6581,
+    "acc_delta_B_minus_A": 0.1393,
+    "paired_t_stat": 11.2363,
+    "paired_t_pvalue": 0.0,
+    "significant_at_0_05_ttest": true,
+    "mcnemar_B_right_A_wrong": 456,
+    "mcnemar_A_right_B_wrong": 181,
+    "mcnemar_chi2": 117.8587,
+    "mcnemar_pvalue": 0.0,
+    "macro_f1_A": 0.5096,
+    "macro_f1_B": 0.6413,
+    "macro_f1_delta": 0.1317,
+    "macro_f1_delta_95ci": [
+      0.1072,
+      0.1582
+    ]
+  },
+  "xlmr_fusion_vs_cnn_bilstm_ALL_3000": {
+    "comparison": "XLM-R Early Fusion vs. CNN-BiLSTM (Kusal)",
+    "n_samples": 3000,
+    "acc_A": 0.542,
+    "acc_B": 0.6407,
+    "acc_delta_B_minus_A": 0.0987,
+    "paired_t_stat": 12.0741,
+    "paired_t_pvalue": 0.0,
+    "significant_at_0_05_ttest": true,
+    "mcnemar_B_right_A_wrong": 463,
+    "mcnemar_A_right_B_wrong": 167,
+    "mcnemar_chi2": 138.1349,
+    "mcnemar_pvalue": 0.0,
+    "macro_f1_A": 0.5375,
+    "macro_f1_B": 0.6366,
+    "macro_f1_delta": 0.0991,
+    "macro_f1_delta_95ci": [
+      0.0839,
+      0.1156
+    ]
+  },
+  "xlmr_text_vs_cnn_bilstm_ALL_3000": {
+    "comparison": "XLM-R Text-Only vs. CNN-BiLSTM (Kusal)",
+    "n_samples": 3000,
+    "acc_A": 0.542,
+    "acc_B": 0.545,
+    "acc_delta_B_minus_A": 0.003,
+    "paired_t_stat": 0.263,
+    "paired_t_pvalue": 0.792596,
+    "significant_at_0_05_ttest": false,
+    "mcnemar_B_right_A_wrong": 590,
+    "mcnemar_A_right_B_wrong": 581,
+    "mcnemar_chi2": 0.0547,
+    "mcnemar_pvalue": 0.815154,
+    "macro_f1_A": 0.5375,
+    "macro_f1_B": 0.5341,
+    "macro_f1_delta": -0.0033,
+    "macro_f1_delta_95ci": [
+      -0.0277,
+      0.0202
+    ]
+  }
+}

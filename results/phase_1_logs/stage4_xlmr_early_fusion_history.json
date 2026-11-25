@@ -1,0 +1,44 @@
+{
+  "model": "Baseline C: XLM-R Early Fusion",
+  "use_demoji": true,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 1.5562,
+      "train_accuracy": 0.4752,
+      "val_loss": 1.2887,
+      "val_accuracy": 0.618,
+      "val_macro_f1": 0.6121,
+      "val_micro_f1": 0.618,
+      "val_weighted_f1": 0.6123,
+      "epoch_time_sec": 218.6,
+      "peak_vram_gb": 5.23
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.036,
+      "train_accuracy": 0.699,
+      "val_loss": 1.1717,
+      "val_accuracy": 0.6673,
+      "val_macro_f1": 0.6608,
+      "val_micro_f1": 0.6673,
+      "val_weighted_f1": 0.6599,
+      "epoch_time_sec": 219.7,
+      "peak_vram_gb": 5.23
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.8861,
+      "train_accuracy": 0.7542,
+      "val_loss": 1.1566,
+      "val_accuracy": 0.68,
+      "val_macro_f1": 0.6698,
+      "val_micro_f1": 0.68,
+      "val_weighted_f1": 0.6692,
+      "epoch_time_sec": 238.4,
+      "peak_vram_gb": 5.24
+    }
+  ],
+  "best_val_macro_f1": 0.6698,
+  "best_epoch": 3
+}

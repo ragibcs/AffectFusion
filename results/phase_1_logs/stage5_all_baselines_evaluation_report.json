@@ -1,0 +1,725 @@
+{
+  "evaluated_at": "2026-11-22T11:55:54.039453+00:00",
+  "metrics": {
+    "val_3k": {
+      "CNN-BiLSTM (Kusal et al.)": {
+        "model": "CNN-BiLSTM (Kusal et al.)",
+        "split": "val_3k",
+        "rows": 3000,
+        "loss": 1.3358,
+        "accuracy": 0.595,
+        "macro_precision": 0.6082,
+        "macro_recall": 0.5966,
+        "macro_f1": 0.5892,
+        "micro_f1": 0.595,
+        "weighted_f1": 0.5889,
+        "per_class": {
+          "Joy": {
+            "precision": 0.6415,
+            "recall": 0.5917,
+            "f1": 0.6156,
+            "support": 387
+          },
+          "Neutral": {
+            "precision": 0.5113,
+            "recall": 0.6395,
+            "f1": 0.5682,
+            "support": 319
+          },
+          "Anger": {
+            "precision": 0.5784,
+            "recall": 0.6293,
+            "f1": 0.6028,
+            "support": 375
+          },
+          "Sadness": {
+            "precision": 0.6446,
+            "recall": 0.7112,
+            "f1": 0.6763,
+            "support": 329
+          },
+          "Surprise": {
+            "precision": 0.5914,
+            "recall": 0.6034,
+            "f1": 0.5973,
+            "support": 295
+          },
+          "Sarcasm": {
+            "precision": 0.5087,
+            "recall": 0.5223,
+            "f1": 0.5154,
+            "support": 337
+          },
+          "Fear": {
+            "precision": 0.7899,
+            "recall": 0.3225,
+            "f1": 0.458,
+            "support": 338
+          },
+          "Disgust": {
+            "precision": 0.5714,
+            "recall": 0.5472,
+            "f1": 0.5591,
+            "support": 307
+          },
+          "Anticipation": {
+            "precision": 0.6371,
+            "recall": 0.8019,
+            "f1": 0.71,
+            "support": 313
+          }
+        },
+        "by_language": {
+          "ENG": {
+            "support": 1174,
+            "accuracy": 0.5733,
+            "macro_f1": 0.5675,
+            "micro_f1": 0.5733,
+            "weighted_f1": 0.5688
+          },
+          "BN": {
+            "support": 926,
+            "accuracy": 0.6404,
+            "macro_f1": 0.6309,
+            "micro_f1": 0.6404,
+            "weighted_f1": 0.6338
+          },
+          "BNG": {
+            "support": 900,
+            "accuracy": 0.5767,
+            "macro_f1": 0.5642,
+            "micro_f1": 0.5767,
+            "weighted_f1": 0.5651
+          }
+        },
+        "by_modality": {
+          "Emoji": {
+            "support": 2099,
+            "accuracy": 0.6374,
+            "macro_f1": 0.6282,
+            "weighted_f1": 0.6295
+          },
+          "Non-Emoji": {
+            "support": 901,
+            "accuracy": 0.4961,
+            "macro_f1": 0.4644,
+            "weighted_f1": 0.4637
+          }
+        }
+      },
+      "XLM-R Text-Only": {
+        "model": "XLM-R Text-Only",
+        "split": "val_3k",
+        "rows": 3000,
+        "loss": 1.3356,
+        "accuracy": 0.5597,
+        "macro_precision": 0.5612,
+        "macro_recall": 0.5639,
+        "macro_f1": 0.5462,
+        "micro_f1": 0.5597,
+        "weighted_f1": 0.5445,
+        "per_class": {
+          "Joy": {
+            "precision": 0.5678,
+            "recall": 0.6279,
+            "f1": 0.5963,
+            "support": 387
+          },
+          "Neutral": {
+            "precision": 0.59,
+            "recall": 0.7398,
+            "f1": 0.6565,
+            "support": 319
+          },
+          "Anger": {
+            "precision": 0.5324,
+            "recall": 0.416,
+            "f1": 0.4671,
+            "support": 375
+          },
+          "Sadness": {
+            "precision": 0.566,
+            "recall": 0.7295,
+            "f1": 0.6375,
+            "support": 329
+          },
+          "Surprise": {
+            "precision": 0.448,
+            "recall": 0.5254,
+            "f1": 0.4836,
+            "support": 295
+          },
+          "Sarcasm": {
+            "precision": 0.3941,
+            "recall": 0.2374,
+            "f1": 0.2963,
+            "support": 337
+          },
+          "Fear": {
+            "precision": 0.7857,
+            "recall": 0.358,
+            "f1": 0.4919,
+            "support": 338
+          },
+          "Disgust": {
+            "precision": 0.4731,
+            "recall": 0.5147,
+            "f1": 0.493,
+            "support": 307
+          },
+          "Anticipation": {
+            "precision": 0.6938,
+            "recall": 0.9265,
+            "f1": 0.7934,
+            "support": 313
+          }
+        },
+        "by_language": {
+          "ENG": {
+            "support": 1174,
+            "accuracy": 0.5724,
+            "macro_f1": 0.5375,
+            "micro_f1": 0.5724,
+            "weighted_f1": 0.5408
+          },
+          "BN": {
+            "support": 926,
+            "accuracy": 0.6253,
+            "macro_f1": 0.6114,
+            "micro_f1": 0.6253,
+            "weighted_f1": 0.6165
+          },
+          "BNG": {
+            "support": 900,
+            "accuracy": 0.4756,
+            "macro_f1": 0.4539,
+            "micro_f1": 0.4756,
+            "weighted_f1": 0.4553
+          }
+        },
+        "by_modality": {
+          "Emoji": {
+            "support": 2099,
+            "accuracy": 0.5264,
+            "macro_f1": 0.5141,
+            "weighted_f1": 0.5118
+          },
+          "Non-Emoji": {
+            "support": 901,
+            "accuracy": 0.6371,
+            "macro_f1": 0.6167,
+            "weighted_f1": 0.6145
+          }
+        }
+      },
+      "XLM-R Early Fusion": {
+        "model": "XLM-R Early Fusion",
+        "split": "val_3k",
+        "rows": 3000,
+        "loss": 1.0031,
+        "accuracy": 0.68,
+        "macro_precision": 0.6859,
+        "macro_recall": 0.6825,
+        "macro_f1": 0.6698,
+        "micro_f1": 0.68,
+        "weighted_f1": 0.6692,
+        "per_class": {
+          "Joy": {
+            "precision": 0.6933,
+            "recall": 0.7183,
+            "f1": 0.7056,
+            "support": 387
+          },
+          "Neutral": {
+            "precision": 0.7085,
+            "recall": 0.7085,
+            "f1": 0.7085,
+            "support": 319
+          },
+          "Anger": {
+            "precision": 0.6873,
+            "recall": 0.68,
+            "f1": 0.6836,
+            "support": 375
+          },
+          "Sadness": {
+            "precision": 0.6801,
+            "recall": 0.924,
+            "f1": 0.7835,
+            "support": 329
+          },
+          "Surprise": {
+            "precision": 0.5995,
+            "recall": 0.7559,
+            "f1": 0.6687,
+            "support": 295
+          },
+          "Sarcasm": {
+            "precision": 0.587,
+            "recall": 0.4807,
+            "f1": 0.5285,
+            "support": 337
+          },
+          "Fear": {
+            "precision": 0.8163,
+            "recall": 0.355,
+            "f1": 0.4948,
+            "support": 338
+          },
+          "Disgust": {
+            "precision": 0.63,
+            "recall": 0.6156,
+            "f1": 0.6227,
+            "support": 307
+          },
+          "Anticipation": {
+            "precision": 0.7711,
+            "recall": 0.9042,
+            "f1": 0.8324,
+            "support": 313
+          }
+        },
+        "by_language": {
+          "ENG": {
+            "support": 1174,
+            "accuracy": 0.6865,
+            "macro_f1": 0.6639,
+            "micro_f1": 0.6865,
+            "weighted_f1": 0.6687
+          },
+          "BN": {
+            "support": 926,
+            "accuracy": 0.7451,
+            "macro_f1": 0.7385,
+            "micro_f1": 0.7451,
+            "weighted_f1": 0.741
+          },
+          "BNG": {
+            "support": 900,
+            "accuracy": 0.6044,
+            "macro_f1": 0.5823,
+            "micro_f1": 0.6044,
+            "weighted_f1": 0.584
+          }
+        },
+        "by_modality": {
+          "Emoji": {
+            "support": 2099,
+            "accuracy": 0.7003,
+            "macro_f1": 0.6887,
+            "weighted_f1": 0.6892
+          },
+          "Non-Emoji": {
+            "support": 901,
+            "accuracy": 0.6326,
+            "macro_f1": 0.5981,
+            "weighted_f1": 0.5948
+          }
+        }
+      }
+    },
+    "test_3k_gold": {
+      "CNN-BiLSTM (Kusal et al.)": {
+        "model": "CNN-BiLSTM (Kusal et al.)",
+        "split": "test_3k_gold",
+        "rows": 3000,
+        "loss": 1.5161,
+        "accuracy": 0.542,
+        "macro_precision": 0.5528,
+        "macro_recall": 0.549,
+        "macro_f1": 0.5375,
+        "micro_f1": 0.542,
+        "weighted_f1": 0.5384,
+        "per_class": {
+          "Joy": {
+            "precision": 0.6612,
+            "recall": 0.5596,
+            "f1": 0.6062,
+            "support": 436
+          },
+          "Neutral": {
+            "precision": 0.4716,
+            "recall": 0.4566,
+            "f1": 0.464,
+            "support": 346
+          },
+          "Anger": {
+            "precision": 0.5182,
+            "recall": 0.5378,
+            "f1": 0.5279,
+            "support": 370
+          },
+          "Sadness": {
+            "precision": 0.6503,
+            "recall": 0.6757,
+            "f1": 0.6627,
+            "support": 333
+          },
+          "Surprise": {
+            "precision": 0.4357,
+            "recall": 0.581,
+            "f1": 0.498,
+            "support": 210
+          },
+          "Sarcasm": {
+            "precision": 0.4461,
+            "recall": 0.4529,
+            "f1": 0.4495,
+            "support": 393
+          },
+          "Fear": {
+            "precision": 0.7616,
+            "recall": 0.3333,
+            "f1": 0.4637,
+            "support": 345
+          },
+          "Disgust": {
+            "precision": 0.4462,
+            "recall": 0.541,
+            "f1": 0.489,
+            "support": 268
+          },
+          "Anticipation": {
+            "precision": 0.5839,
+            "recall": 0.8027,
+            "f1": 0.6761,
+            "support": 299
+          }
+        },
+        "by_language": {
+          "ENG": {
+            "support": 1147,
+            "accuracy": 0.4821,
+            "macro_f1": 0.4534,
+            "micro_f1": 0.4821,
+            "weighted_f1": 0.4725
+          },
+          "BN": {
+            "support": 1033,
+            "accuracy": 0.5992,
+            "macro_f1": 0.5827,
+            "micro_f1": 0.5992,
+            "weighted_f1": 0.6011
+          },
+          "BNG": {
+            "support": 820,
+            "accuracy": 0.5537,
+            "macro_f1": 0.5082,
+            "micro_f1": 0.5537,
+            "weighted_f1": 0.5443
+          }
+        },
+        "by_modality": {
+          "Emoji": {
+            "support": 1974,
+            "accuracy": 0.5811,
+            "macro_f1": 0.5537,
+            "weighted_f1": 0.5755
+          },
+          "Non-Emoji": {
+            "support": 1026,
+            "accuracy": 0.4669,
+            "macro_f1": 0.4313,
+            "weighted_f1": 0.4476
+          }
+        }
+      },
+      "XLM-R Text-Only": {
+        "model": "XLM-R Text-Only",
+        "split": "test_3k_gold",
+        "rows": 3000,
+        "loss": 1.376,
+        "accuracy": 0.545,
+        "macro_precision": 0.5435,
+        "macro_recall": 0.5512,
+        "macro_f1": 0.5341,
+        "micro_f1": 0.545,
+        "weighted_f1": 0.5354,
+        "per_class": {
+          "Joy": {
+            "precision": 0.6192,
+            "recall": 0.6078,
+            "f1": 0.6134,
+            "support": 436
+          },
+          "Neutral": {
+            "precision": 0.5518,
+            "recall": 0.6156,
+            "f1": 0.582,
+            "support": 346
+          },
+          "Anger": {
+            "precision": 0.5263,
+            "recall": 0.4324,
+            "f1": 0.4748,
+            "support": 370
+          },
+          "Sadness": {
+            "precision": 0.519,
+            "recall": 0.6577,
+            "f1": 0.5801,
+            "support": 333
+          },
+          "Surprise": {
+            "precision": 0.3636,
+            "recall": 0.4381,
+            "f1": 0.3974,
+            "support": 210
+          },
+          "Sarcasm": {
+            "precision": 0.3967,
+            "recall": 0.2443,
+            "f1": 0.3024,
+            "support": 393
+          },
+          "Fear": {
+            "precision": 0.8073,
+            "recall": 0.4493,
+            "f1": 0.5773,
+            "support": 345
+          },
+          "Disgust": {
+            "precision": 0.4451,
+            "recall": 0.5896,
+            "f1": 0.5072,
+            "support": 268
+          },
+          "Anticipation": {
+            "precision": 0.6627,
+            "recall": 0.9264,
+            "f1": 0.7727,
+            "support": 299
+          }
+        },
+        "by_language": {
+          "ENG": {
+            "support": 1147,
+            "accuracy": 0.5824,
+            "macro_f1": 0.5501,
+            "micro_f1": 0.5824,
+            "weighted_f1": 0.5581
+          },
+          "BN": {
+            "support": 1033,
+            "accuracy": 0.5595,
+            "macro_f1": 0.5306,
+            "micro_f1": 0.5595,
+            "weighted_f1": 0.5596
+          },
+          "BNG": {
+            "support": 820,
+            "accuracy": 0.4744,
+            "macro_f1": 0.4335,
+            "micro_f1": 0.4744,
+            "weighted_f1": 0.4667
+          }
+        },
+        "by_modality": {
+          "Emoji": {
+            "support": 1974,
+            "accuracy": 0.5187,
+            "macro_f1": 0.5096,
+            "weighted_f1": 0.5072
+          },
+          "Non-Emoji": {
+            "support": 1026,
+            "accuracy": 0.5955,
+            "macro_f1": 0.5777,
+            "weighted_f1": 0.5861
+          }
+        }
+      },
+      "XLM-R Early Fusion": {
+        "model": "XLM-R Early Fusion",
+        "split": "test_3k_gold",
+        "rows": 3000,
+        "loss": 1.1604,
+        "accuracy": 0.6407,
+        "macro_precision": 0.6481,
+        "macro_recall": 0.6538,
+        "macro_f1": 0.6366,
+        "micro_f1": 0.6407,
+        "weighted_f1": 0.6361,
+        "per_class": {
+          "Joy": {
+            "precision": 0.7448,
+            "recall": 0.656,
+            "f1": 0.6976,
+            "support": 436
+          },
+          "Neutral": {
+            "precision": 0.6571,
+            "recall": 0.5925,
+            "f1": 0.6231,
+            "support": 346
+          },
+          "Anger": {
+            "precision": 0.6513,
+            "recall": 0.6108,
+            "f1": 0.6304,
+            "support": 370
+          },
+          "Sadness": {
+            "precision": 0.6642,
+            "recall": 0.8198,
+            "f1": 0.7339,
+            "support": 333
+          },
+          "Surprise": {
+            "precision": 0.4727,
+            "recall": 0.7429,
+            "f1": 0.5778,
+            "support": 210
+          },
+          "Sarcasm": {
+            "precision": 0.5106,
+            "recall": 0.4275,
+            "f1": 0.4654,
+            "support": 393
+          },
+          "Fear": {
+            "precision": 0.8611,
+            "recall": 0.4493,
+            "f1": 0.5905,
+            "support": 345
+          },
+          "Disgust": {
+            "precision": 0.5482,
+            "recall": 0.6791,
+            "f1": 0.6067,
+            "support": 268
+          },
+          "Anticipation": {
+            "precision": 0.7227,
+            "recall": 0.9064,
+            "f1": 0.8042,
+            "support": 299
+          }
+        },
+        "by_language": {
+          "ENG": {
+            "support": 1147,
+            "accuracy": 0.6626,
+            "macro_f1": 0.643,
+            "micro_f1": 0.6626,
+            "weighted_f1": 0.649
+          },
+          "BN": {
+            "support": 1033,
+            "accuracy": 0.667,
+            "macro_f1": 0.6512,
+            "micro_f1": 0.667,
+            "weighted_f1": 0.6695
+          },
+          "BNG": {
+            "support": 820,
+            "accuracy": 0.5768,
+            "macro_f1": 0.5367,
+            "micro_f1": 0.5768,
+            "weighted_f1": 0.574
+          }
+        },
+        "by_modality": {
+          "Emoji": {
+            "support": 1974,
+            "accuracy": 0.6581,
+            "macro_f1": 0.6413,
+            "weighted_f1": 0.6544
+          },
+          "Non-Emoji": {
+            "support": 1026,
+            "accuracy": 0.6072,
+            "macro_f1": 0.5702,
+            "weighted_f1": 0.5827
+          }
+        }
+      }
+    }
+  },
+  "statistical_significance": {
+    "xlmr_fusion_vs_xlmr_text_ALL_3000": {
+      "comparison": "XLM-R Early Fusion vs. XLM-R Text-Only",
+      "n_samples": 3000,
+      "acc_A": 0.545,
+      "acc_B": 0.6407,
+      "acc_delta_B_minus_A": 0.0957,
+      "paired_t_stat": 10.5661,
+      "paired_t_pvalue": 0.0,
+      "significant_at_0_05_ttest": true,
+      "mcnemar_B_right_A_wrong": 526,
+      "mcnemar_A_right_B_wrong": 239,
+      "mcnemar_chi2": 106.9229,
+      "mcnemar_pvalue": 0.0,
+      "macro_f1_A": 0.5341,
+      "macro_f1_B": 0.6366,
+      "macro_f1_delta": 0.1025,
+      "macro_f1_delta_95ci": [
+        0.0846,
+        0.1198
+      ]
+    },
+    "xlmr_fusion_vs_xlmr_text_EMOJI_ONLY": {
+      "comparison": "XLM-R Early Fusion vs. XLM-R Text-Only",
+      "n_samples": 1974,
+      "acc_A": 0.5187,
+      "acc_B": 0.6581,
+      "acc_delta_B_minus_A": 0.1393,
+      "paired_t_stat": 11.2363,
+      "paired_t_pvalue": 0.0,
+      "significant_at_0_05_ttest": true,
+      "mcnemar_B_right_A_wrong": 456,
+      "mcnemar_A_right_B_wrong": 181,
+      "mcnemar_chi2": 117.8587,
+      "mcnemar_pvalue": 0.0,
+      "macro_f1_A": 0.5096,
+      "macro_f1_B": 0.6413,
+      "macro_f1_delta": 0.1317,
+      "macro_f1_delta_95ci": [
+        0.1072,
+        0.1582
+      ]
+    },
+    "xlmr_fusion_vs_cnn_bilstm_ALL_3000": {
+      "comparison": "XLM-R Early Fusion vs. CNN-BiLSTM (Kusal)",
+      "n_samples": 3000,
+      "acc_A": 0.542,
+      "acc_B": 0.6407,
+      "acc_delta_B_minus_A": 0.0987,
+      "paired_t_stat": 12.0741,
+      "paired_t_pvalue": 0.0,
+      "significant_at_0_05_ttest": true,
+      "mcnemar_B_right_A_wrong": 463,
+      "mcnemar_A_right_B_wrong": 167,
+      "mcnemar_chi2": 138.1349,
+      "mcnemar_pvalue": 0.0,
+      "macro_f1_A": 0.5375,
+      "macro_f1_B": 0.6366,
+      "macro_f1_delta": 0.0991,
+      "macro_f1_delta_95ci": [
+        0.0839,
+        0.1156
+      ]
+    },
+    "xlmr_text_vs_cnn_bilstm_ALL_3000": {
+      "comparison": "XLM-R Text-Only vs. CNN-BiLSTM (Kusal)",
+      "n_samples": 3000,
+      "acc_A": 0.542,
+      "acc_B": 0.545,
+      "acc_delta_B_minus_A": 0.003,
+      "paired_t_stat": 0.263,
+      "paired_t_pvalue": 0.792596,
+      "significant_at_0_05_ttest": false,
+      "mcnemar_B_right_A_wrong": 590,
+      "mcnemar_A_right_B_wrong": 581,
+      "mcnemar_chi2": 0.0547,
+      "mcnemar_pvalue": 0.815154,
+      "macro_f1_A": 0.5375,
+      "macro_f1_B": 0.5341,
+      "macro_f1_delta": -0.0033,
+      "macro_f1_delta_95ci": [
+        -0.0277,
+        0.0202
+      ]
+    }
+  }
+}
