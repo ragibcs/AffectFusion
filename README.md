@@ -1,154 +1,154 @@
 # AffectFusion: A Cross-Attention Transformer Framework for Explainable Multimodal Emotion Recognition from Text and Emoji Semantics
 
 [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-Academic%20Research-green.svg)]()
-[![Institution](https://img.shields.io/badge/Institution-Daffodil%20International%20University-red.svg)](https://daffodilvarsity.edu.bd/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-FP16%20AMP-ee4c2c.svg)](https://pytorch.org/)
+[![Transformers](https://img.shields.io/badge/HuggingFace-XLM--RoBERTa-yellow.svg)](https://huggingface.co/xlm-roberta-base)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Institution](https://img.shields.io/badge/Institution-Daffodil%20International%20University-00529B.svg)](https://daffodilvarsity.edu.bd/)
+[![Status](https://img.shields.io/badge/FYDP%20Phase--I-Completed%20%E2%9C%93-1D7A6E.svg)](docs/phase_1/)
 
-Final Year Design Project (FYDP) / Thesis Project  
-**Department of Computer Science and Engineering (CSE)**  
+Final Year Design Project (FYDP) — **Department of Computer Science and Engineering (CSE)**  
 **Daffodil International University (DIU), Dhaka, Bangladesh**
 
 ---
 
-## 👥 Authors & Supervision
+## Authors & Supervision
 
-- **Lead Researchers:**
-  - **MD. RAGIB HASAN** (Student ID: `232-15-775`)
-  - **MD. ASADULLA HEL GALIB** (Student ID: `232-15-270`)
-- **Supervisor:**
-  - **Sharmin Akter**, Assistant Professor, Dept. of CSE, Daffodil International University
-- **Co-Supervisor:**
-  - **Dewan Mamun Raza**, Assistant Professor, Dept. of CSE, Daffodil International University
-
----
-
-## 📌 Project Overview
-
-Digital communication increasingly relies on emojis to modify, amplify, or contradict the textual sentiment of messages (e.g., sarcasm, irony, emotional emphasis). Conventional text-only NLP models fail to interpret these multimodal signals, while early fusion (simple concatenation) models fail to learn fine-grained token-emoji interactions.
-
-**AffectFusion** introduces a cross-attention transformer framework that:
-1. Represents textual tokens and emoji semantics through dedicated contextualized and learned embedding spaces.
-2. Employs a multi-head cross-attention fusion mechanism where text representations query emoji key-value representations and vice-versa.
-3. Integrates post-hoc explainability (SHAP, LIME, Attention Weight Visualization) for transparent, trustworthy emotion classification.
-4. Evaluates performance on real-world, noisy, code-mixed social media datasets across **Bengali (বাংলা)**, **Banglish (Transliterated Bengali)**, and **Regional English**.
+| Role | Name | Identifier / Designation |
+| :--- | :--- | :--- |
+| **Researcher 1** | **MD. RAGIB HASAN** | Student ID: `232-15-775` · `hasan2305101775@diu.edu.bd` |
+| **Researcher 2** | **MD. ASADULLA HEL GALIB** | Student ID: `232-15-270` · `galib2305101270@diu.edu.bd` |
+| **Supervisor** | **Sharmin Akter** | Assistant Professor, Dept. of CSE, DIU |
+| **Co-Supervisor** | **Dewan Mamun Raza** | Assistant Professor, Dept. of CSE, DIU |
 
 ---
 
-## 📊 Dataset Structure & Statistics
+## Project Overview & Pipeline Architecture
 
-The repository contains multi-platform social media datasets specifically harvested and preprocessed for multimodal emotion recognition and text-emoji contradiction analysis.
+Digital communication relies heavily on emojis to intensify, soften, or invert textual meaning—especially in sarcasm and irony (e.g., *"Great, just what I needed 🙄"* or *"বাহ বাহ বেশ ভালই বিচার ... 👏"*). Text-only models discard emoji cues, while static early-concatenation models fail to learn fine-grained token-emoji alignment.
 
-### 1. YouTube Datasets (90,000 Balanced Samples)
+**AffectFusion** addresses this across **English (`ENG`)**, **Native Bengali (`BN`)**, and **Romanized Banglish (`BNG`)** social media posts spanning **9 emotions** (`Joy`, `Neutral`, `Anger`, `Sadness`, `Surprise`, `Sarcasm`, `Fear`, `Disgust`, `Anticipation`).
 
-Each YouTube dataset contains **30,000 rows** balanced strictly with **15,000 samples with emojis (`has_emoji = 1`)** and **15,000 samples without emojis (`has_emoji = 0`)**:
-
-| Folder / Dataset | Target Script & Language | Total Samples | With Emoji (50%) | Without Emoji (50%) | Format |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| 📁 `AffectFusion_Bangla_YouTube/` | Native Bengali Script (বাংলা) | **30,000** | 15,000 | 15,000 | `.csv` + `.xlsx` |
-| 📁 `AffectFusion_Banglish_YouTube/` | Banglish (Transliterated Bengali) | **30,000** | 15,000 | 15,000 | `.csv` + `.xlsx` |
-| 📁 `AffectFusion_English_YouTube/` | Regional Community English | **30,000** | 15,000 | 15,000 | `.csv` + `.xlsx` |
-| **Total YouTube Corpus** | **All 3 Modalities** | **90,000** | **45,000** | **45,000** | — |
+![AffectFusion End-to-End Pipeline](results/figures/00_affectfusion_architecture_pipeline.png)
 
 ---
 
-### 2. Reddit Datasets (10,652 Samples)
+## Phase-I Milestones Completed (Fall 2026)
 
-Harvested across `r/bangladesh`, `r/kolkata`, `r/Dhaka`, and 50+ emotional keyword search clusters:
-
-| Dataset File | Language / Category | Sample Count | With Emojis |
-| :--- | :--- | :---: | :---: |
-| 📄 `Bangla_reddit_unlabeled.csv` | Native Bengali (বাংলা) | **2,192 rows** | 319 (14.6%) |
-| 📄 `Banglish_reddit_unlabeled.csv` | Banglish (বাংলিশ) | **1,613 rows** | 237 (14.7%) |
-| 📄 `English_reddit_unlabeled.csv` | Regional English | **6,847 rows** | 648 (9.5%) |
-| 📄 `All_Reddit_Unlabeled.csv` | **Master Combined Reddit Dataset** | **10,652 rows** | **1,204 (11.3%)** |
+1. **Zero-API Multilingual Scraping & Privacy Pipeline:** Harvested **59,840** raw multilingual social media comments (YouTube, Reddit/Arctic Shift, Mastodon, Lemmy, RSS) using disk-backed SQLite MD5 deduplication and automated PII redaction (`<USER>`, `<URL>`, `<EMAIL>`, `<PHONE>`).
+2. **Hybrid Auto-Labeling & 5,000-Row Blinded Human Gold Verification:** Auto-labeled **44,580** high-confidence rows (`conf >= 3`) using `Gemini Flash-Lite` (following a 4-bit NF4 `Qwen2.5-7B-Instruct` pilot), then manually verified **5,000 real scraped rows** blindly across both researchers (`2,500` each):
+   - **Combined Gold Agreement (`N = 5,000`):** **83.00% Raw Agreement**, **Cohen's κ = 0.8087** (`ENG`: `0.8129`, `BN`: `0.8128`, `BNG`: `0.7958`).
+   - Upgraded **`test_3k`** to **100% Human-Verified Gold** (`574` labels corrected) and **`val_3k`** to **66.7% Human-Verified Gold** (`276` labels corrected).
+3. **Zero-Leakage 80/10/10 Benchmark (`N = 30,000`):** Locked 100% real scraped validation (`3,000`) and test (`3,000`) splits, balanced `train_24k` (`2,666–2,667` rows/class) via Train-only Gemini Flash emoji-preserving paraphrasing (`+3,528` rows), and engineered a 25-column dual-stream feature schema (`text_stream`, `emoji_stream`, `demoji_text`, `baseline_input`).
+4. **Controlled 3-Baseline Suite & Statistical Significance:** Replicated Kusal et al. (2025) `CNN-BiLSTM` adapted for multilingual subwords alongside `xlm-roberta-base` Text-Only and `xlm-roberta-base` Early Fusion under identical splits and seed (`42`), backed by paired *t*-tests, McNemar's χ², 95% bootstrap CIs, and a `1,078`-error diagnostic audit.
 
 ---
 
-## 📑 20-Column Data Schema Specification
+## Phase-I Benchmark Summary (`100%` Human-Verified Gold `test_3k`, `N = 3,000`)
 
-All dataset files (`.csv` and `.xlsx`) strictly adhere to the unified 20-column AffectFusion schema:
+### 1. Dataset Splits & Zero-Leakage Provenance
 
-| # | Column Name | Type | Description |
-| :---: | :--- | :---: | :--- |
-| **1** | `ID` | `string` | Unique UUID identifier for every sample. |
-| **2** | `Data` | `string` | Cleaned social media post/comment (PII, URLs, handles stripped; emojis preserved). |
-| **3** | `text_only` | `string` | Pure textual content with all emojis removed. |
-| **4** | `emoji_stream` | `string` | Extracted emojis in order of appearance (e.g. `😍,🎉` or `💀`). |
-| **5** | `has_emoji` | `int (0/1)` | Binary flag indicating emoji presence (`1` if emoji count > 0, else `0`). |
-| **6** | `emoji_count` | `int` | Total number of emojis present in the sample. |
-| **7** | `word_count` | `int` | Total number of whitespace-delimited words in `text_only`. |
-| **8-17** | **10 Emotion Columns**<br>`Joy, Sadness, Anger, Fear, Surprise, Disgust, Love, Anticipation, Sarcasm, Neutral` | `int (0/1)` / `empty` | Multi-label binary indicators for target emotional categories aligned with GoEmotions. Blank for unlabeled pools; populated in annotated subsets. |
-| **18** | `label_source` | `string` | Annotation source (`pending_manual`, `hybrid_annotated`, `manual_verified`). |
-| **19** | `annotator_agreement` | `float` | Inter-annotator confidence score / modality alignment score (e.g., `0.95`, `0.80`). |
-| **20** | `sarcasm_or_contradiction_flag` | `int (0/1)` | Binary indicator (`1` if text sentiment and emoji semantics contradict). |
+| Split | Rows (%) | Real Scraped | DAIR-AI (Train-Only) | Train-Only Aug. | Human Gold Verified | ENG / BN / BNG (%) | Emoji % |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **`train_24k`** | 24,000 (80%) | 18,872 | 1,600* | 3,528* | 0 (AI `conf≥3`) | 36.4 / 36.0 / 27.6 | 59.09% |
+| **`val_3k`** | 3,000 (10%) | 3,000 (100%) | 0 | 0 | 2,000 (66.7%) | 39.1 / 30.9 / 30.0 | 69.97% |
+| **`test_3k`** | 3,000 (10%) | 3,000 (100%) | 0 | 0 | **3,000 (100%)** | 38.2 / 34.4 / 27.3 | 65.80% |
+| **Total** | **30,000 (100%)** | **24,872** | **1,600** | **3,528** | **5,000 (κ = 0.8087)** | **36.9 / 35.3 / 27.8** | **60.85%** |
+
+*\*1,147 of the 3,528 Fear paraphrases were derived from DAIR-AI Twitter seeds (`2,747` Train rows tagged `is_external_train_only=1`); strictly `0` augmented or external rows appear in `val_3k` or `test_3k`.*
+
+### 2. Three-Baseline Model Performance
+
+| Baseline Model | Val Acc | Val Macro-F1 | Test Acc (Micro-F1) | Test Macro-F1 | Weighted-F1 | ENG F1 | BN F1 | BNG F1 | Emoji F1 | Non-Emoji F1 | Sarcasm F1 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **CNN-BiLSTM (Kusal et al., 2025)** | 59.50% | 0.5892 | 54.20% | 0.5375 | 0.5384 | 0.4534 | 0.5827 | 0.5082 | 0.5537 | 0.4313 | 0.4495 |
+| **XLM-R Text-Only** | 55.97% | 0.5462 | 54.50% | 0.5341 | 0.5354 | 0.5501 | 0.5306 | 0.4335 | 0.5096 | 0.5777 | 0.3024 |
+| **XLM-R Early Fusion** | **68.00%** | **0.6698** | **64.07%** | **0.6366** | **0.6361** | **0.6430** | **0.6512** | **0.5367** | **0.6413** | 0.5702 | **0.4654** |
+
+### 3. Paired Statistical Significance Tests (`test_3k`)
+
+| Model Comparison (B vs. A) | N | ΔAccuracy | Paired *t*-stat | McNemar χ² (B✓A✗ / A✓B✗) | *p*-value | ΔMacro-F1 [95% CI] |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **XLM-R Early Fusion vs. Text-Only (All)** | 3,000 | **+9.57%** | +10.57 | 106.92 (526 / 239) | **< 0.0001** | **+0.1025** [0.0846, 0.1198] |
+| **XLM-R Early Fusion vs. Text-Only (Emoji)** | 1,974 | **+13.93%** | +11.24 | 117.86 (456 / 181) | **< 0.0001** | **+0.1317** [0.1072, 0.1582] |
+| **XLM-R Early Fusion vs. CNN-BiLSTM** | 3,000 | **+9.87%** | +12.07 | 138.13 (463 / 167) | **< 0.0001** | **+0.0991** [0.0839, 0.1156] |
+| XLM-R Text-Only vs. CNN-BiLSTM (All) | 3,000 | +0.30% | +0.26 | 0.05 (590 / 581) | 0.7926 (NS) | −0.0033 [−0.0277, 0.0202] |
+
+![3-Baseline Comparison on Gold Test](results/figures/06_baseline_3model_comparison.png)
+
+> **Key Diagnostic Motivation for Next Phase:** Despite statistically significant overall gains, Early Fusion still misclassifies **57.25% of Sarcasm** (`0.4654` F1, `42.75%` recall) and exhibits **emoji-hijacking** on Banglish (`0.5367` F1), directly motivating **Bidirectional Multi-Head Cross-Attention (`Text ↔ Emoji`)**, gated modality fusion, and unified **SHAP + LIME + Cross-Attention Explainability** in the next phase.
 
 ---
 
-## 🛠️ Repository File Tree
+## Repository Structure
 
-```
-├── AffectFusion_Bangla_YouTube/
-│   ├── Bangla_YouTube_Unlabeled_30000.csv       # 30,000 Bangla YouTube samples (15k emoji / 15k no-emoji)
-│   ├── Bangla_YouTube_Unlabeled_30000.xlsx      # Excel version
-│   ├── cleaned_candidate_pool.csv               # Cleaned candidate pool
-│   └── raw_scraped_comments.csv                 # 160k raw scraped comments pool
+```text
+AffectFusion/
+├── README.md                                  # Project overview, Phase-I results & reproduction guide
+├── LICENSE                                    # MIT License
+├── requirements.txt                           # Python & PyTorch dependencies
+├── .env.example                               # Environment variable template (no real keys)
 │
-├── AffectFusion_Banglish_YouTube/
-│   ├── Banglish_YouTube_Unlabeled_30000.csv     # 30,000 Banglish YouTube samples (15k emoji / 15k no-emoji)
-│   ├── Banglish_YouTube_Unlabeled_30000.xlsx    # Excel version
-│   └── cleaned_candidate_pool.csv
+├── docs/
+│   ├── phase_1/
+│   │   ├── AffectFusion_Phase-I_Progress_Report.docx   # Official DIU FYDP Phase-I Evaluation Report
+│   │   └── AffectFusion_Phase-I_Evaluation.pptx        # Official DIU FYDP Phase-I Presentation Slides
+│   ├── guidelines/
+│   │   └── AffectFusion_Human_Annotation_Guidelines.md # Dual-annotator multimodal labeling protocol
+│   └── title_defense/                                  # Initial FYDP Title Defense documents
 │
-├── AffectFusion_English_YouTube/
-│   ├── English_YouTube_Unlabeled_30000.csv      # 30,000 English YouTube samples (15k emoji / 15k no-emoji)
-│   ├── English_YouTube_Unlabeled_30000.xlsx     # Excel version
-│   └── cleaned_candidate_pool.csv
+├── notebooks/
+│   └── phase_1/
+│       ├── 01_zero_api_scraping_cleaning_qwen_pilot.ipynb
+│       ├── 02_zero_leakage_split_gold5k_augmentation_features.ipynb
+│       └── 03_eda_and_three_baseline_evaluation.ipynb
 │
-├── AffectFusion_all_reddit/
-│   ├── All_Reddit_Unlabeled.csv                 # 10,652 Master Reddit samples
-│   ├── Bangla_reddit_unlabeled.csv              # 2,192 Bangla Reddit samples
-│   ├── Banglish_reddit_unlabeled.csv            # 1,613 Banglish Reddit samples
-│   └── English_reddit_unlabeled.csv             # 6,847 English Reddit samples
+├── src/
+│   ├── scraping/                              # Multi-platform YouTube & Reddit scraping modules
+│   └── annotation_qa/                         # Exploratory 100K QA & IAA calculation scripts
 │
-├── generate_youtube_30k_final.py                # Multi-threaded YouTube dataset builder
-├── multi_token_reddit_scraper.py                # Multi-token rotating Reddit scraper
-├── build_full_dataset.py                        # Automated multilingual scraper & hybrid annotator
-├── thesis_data_scraper.py                       # Modular multi-platform scraper (YouTube, Reddit, Twitter, FB)
-├── SU26D1-775.pdf                               # Thesis Proposal Document
-├── SU26D1-775 Title Defense Evaluation Report.pdf
-├── requirements.txt                             # Python dependencies
-├── .env.example                                 # Environment variables template
-└── README.md                                    # Project documentation
+├── data/
+│   ├── phase_1_final/                         # Locked 30K zero-leakage splits (train_24k, val_3k, test_3k)
+│   ├── gold_verification/                     # 5,000 blinded human-verified gold annotations (κ = 0.8087)
+│   └── exploratory_unlabeled/                 # Initial 100,652 unlabeled YouTube + Reddit pools
+│
+└── results/
+    ├── figures/                               # 11 publication-grade 300-DPI EDA & evaluation figures
+    ├── phase_1_logs/                          # Training histories, eval metrics, significance tests & configs
+    └── exploratory_qa/                        # 100K pilot QA validation & distribution summaries
 ```
 
+*(Note: Multi-gigabyte `.safetensors` checkpoints and raw `.sqlite` / `.jsonl` scraping shards are excluded via `.gitignore` to keep the repository lightweight; full reproduction is supported via the notebooks in `notebooks/phase_1/` on Google Colab Free T4 GPU.)*
+
 ---
 
-## 🚀 Installation & Setup
+## Quick Start & Reproduction
 
-### 1. Clone Repository & Setup Virtual Environment
 ```bash
+# 1. Clone repository
 git clone https://github.com/ragibcs/AffectFusion.git
 cd AffectFusion
 
+# 2. Setup virtual environment and install dependencies
 python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate          # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-```
 
-### 2. Configure Environment Variables
-Copy `.env.example` to `.env` and insert your API credentials if running scrapers:
-```bash
+# 3. Configure environment variables (optional for Gemini paraphrasing / HF downloads)
 cp .env.example .env
 ```
 
+To reproduce all Phase-I EDA charts and the 3-baseline evaluation suite on Google Colab (Free T4 GPU, peak VRAM `5.24 GB`), open [`notebooks/phase_1/03_eda_and_three_baseline_evaluation.ipynb`](notebooks/phase_1/03_eda_and_three_baseline_evaluation.ipynb) with the locked splits in `data/phase_1_final/`.
+
 ---
 
-## 📖 Citation & Academic Contact
+## Next Phase Roadmap (Dec 2026 – Apr 2027)
 
-For questions regarding the dataset, preprocessing pipeline, or model architecture:
-
-- **MD. Ragib Hasan** — `hasan2305101775@diu.edu.bd`
-- **MD. Asadulla Hel Galib** — `galib2305101270@diu.edu.bd`
-- **Department of Computer Science and Engineering, Daffodil International University**
+- [ ] **Dual Encoders:** Fine-tuned `XLM-RoBERTa-base` text stream + `Emoji2Vec` / learned positional emoji semantic encoder.
+- [ ] **Bidirectional Cross-Attention & Gated Fusion:** Explicit `Text → Emoji` and `Emoji → Text` multi-head cross-attention to resolve sarcasm & emoji-hijacking.
+- [ ] **Controlled Ablation & GoEmotions Generalization:** Quantify fusion increments on Gold `test_3k` and benchmark cross-domain transfer vs. GoEmotions.
+- [ ] **Integrated Explainability Suite:** Unified `SHAP`, `LIME`, and Cross-Attention heatmaps with quantitative tri-method attribution agreement.
+- [ ] **Demo Prototype & Final Thesis:** Interactive demo, sarcasm/contradiction case study, and final FYDP thesis submission.
 
 ---
 
