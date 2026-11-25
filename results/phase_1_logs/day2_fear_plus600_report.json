@@ -1,0 +1,9 @@
+{
+  "method_used": "zero_api_google_translate",
+  "added_fear_total": 0,
+  "added_by_lang": {},
+  "added_emoji_rows": 0,
+  "added_emoji_pct": 0.0,
+  "split_restriction": "TRAIN_ONLY (exclude platform starting with 'twitter_dair' from Val & Test in Day 3)",
+  "saved_shard": "/content/drive/MyDrive/AffectFusion_Day2_Gemini/03_gemini_labeled_shards/gemini_w8_shard_00002.jsonl"
+}
