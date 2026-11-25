@@ -1,0 +1,126 @@
+{
+  "completed_at": "2026-11-22T10:44:27.519169+00:00",
+  "grand_total_rows": 30000,
+  "split_ratio": "80 / 10 / 10",
+  "splits": {
+    "train": {
+      "split": "train_24k",
+      "rows": 24000,
+      "csv_path": "/content/drive/MyDrive/AffectFusion_Day3/04_feature_engineered_final/train_24k.csv",
+      "parquet_path": "/content/drive/MyDrive/AffectFusion_Day3/04_feature_engineered_final/train_24k.parquet",
+      "csv_size_mb": 11.8,
+      "class_counts": {
+        "Joy": 2666,
+        "Neutral": 2666,
+        "Anger": 2667,
+        "Sadness": 2666,
+        "Surprise": 2667,
+        "Sarcasm": 2667,
+        "Fear": 2667,
+        "Disgust": 2667,
+        "Anticipation": 2667
+      },
+      "language_counts": {
+        "ENG": 8745,
+        "BN": 8642,
+        "BNG": 6613
+      },
+      "language_pct": {
+        "ENG": 36.44,
+        "BN": 36.01,
+        "BNG": 27.55
+      },
+      "emoji_rows": 14182,
+      "emoji_pct": 59.09,
+      "avg_emoji_count": 1.388,
+      "avg_text_length": 84.2,
+      "augmented_rows": 3528,
+      "external_train_only_rows": 2747
+    },
+    "val": {
+      "split": "val_3k",
+      "rows": 3000,
+      "csv_path": "/content/drive/MyDrive/AffectFusion_Day3/04_feature_engineered_final/val_3k.csv",
+      "parquet_path": "/content/drive/MyDrive/AffectFusion_Day3/04_feature_engineered_final/val_3k.parquet",
+      "csv_size_mb": 1.63,
+      "class_counts": {
+        "Joy": 387,
+        "Neutral": 319,
+        "Anger": 375,
+        "Sadness": 329,
+        "Surprise": 295,
+        "Sarcasm": 337,
+        "Fear": 338,
+        "Disgust": 307,
+        "Anticipation": 313
+      },
+      "language_counts": {
+        "ENG": 1174,
+        "BN": 926,
+        "BNG": 900
+      },
+      "language_pct": {
+        "ENG": 39.13,
+        "BN": 30.87,
+        "BNG": 30.0
+      },
+      "emoji_rows": 2099,
+      "emoji_pct": 69.97,
+      "avg_emoji_count": 1.796,
+      "avg_text_length": 99.4,
+      "augmented_rows": 0,
+      "external_train_only_rows": 0
+    },
+    "test": {
+      "split": "test_3k",
+      "rows": 3000,
+      "csv_path": "/content/drive/MyDrive/AffectFusion_Day3/04_feature_engineered_final/test_3k.csv",
+      "parquet_path": "/content/drive/MyDrive/AffectFusion_Day3/04_feature_engineered_final/test_3k.parquet",
+      "csv_size_mb": 1.58,
+      "class_counts": {
+        "Joy": 436,
+        "Neutral": 346,
+        "Anger": 370,
+        "Sadness": 333,
+        "Surprise": 210,
+        "Sarcasm": 393,
+        "Fear": 345,
+        "Disgust": 268,
+        "Anticipation": 299
+      },
+      "language_counts": {
+        "ENG": 1147,
+        "BN": 1033,
+        "BNG": 820
+      },
+      "language_pct": {
+        "ENG": 38.23,
+        "BN": 34.43,
+        "BNG": 27.33
+      },
+      "emoji_rows": 1974,
+      "emoji_pct": 65.8,
+      "avg_emoji_count": 1.596,
+      "avg_text_length": 92.6,
+      "augmented_rows": 0,
+      "external_train_only_rows": 0
+    }
+  },
+  "null_checks": {
+    "train": {
+      "text_stream": 0,
+      "label": 0,
+      "label_id": 0
+    },
+    "val": {
+      "text_stream": 0,
+      "label": 0,
+      "label_id": 0
+    },
+    "test": {
+      "text_stream": 0,
+      "label": 0,
+      "label_id": 0
+    }
+  }
+}

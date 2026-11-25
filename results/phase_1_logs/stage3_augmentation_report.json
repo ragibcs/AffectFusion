@@ -1,0 +1,94 @@
+{
+  "completed_at": "2026-11-22T10:44:07.629971+00:00",
+  "classes": {
+    "Joy": {
+      "real_train": 2666,
+      "augmented_added": 0,
+      "final_train": 2666
+    },
+    "Neutral": {
+      "real_train": 2666,
+      "augmented_added": 0,
+      "final_train": 2666
+    },
+    "Anger": {
+      "real_train": 2054,
+      "augmented_added": 613,
+      "final_train": 2667,
+      "methods": {
+        "gemini_flash": 613
+      },
+      "lang_added": {
+        "ENG": 360,
+        "BNG": 253
+      }
+    },
+    "Sadness": {
+      "real_train": 2666,
+      "augmented_added": 0,
+      "final_train": 2666
+    },
+    "Surprise": {
+      "real_train": 1626,
+      "augmented_added": 1041,
+      "final_train": 2667,
+      "methods": {
+        "gemini_flash": 915,
+        "local_lexical_paraphrase": 1,
+        "gemini_xlingual": 125
+      },
+      "lang_added": {
+        "BNG": 575,
+        "BN": 417,
+        "ENG": 49
+      }
+    },
+    "Sarcasm": {
+      "real_train": 2667,
+      "augmented_added": 0,
+      "final_train": 2667
+    },
+    "Fear": {
+      "real_train": 1283,
+      "augmented_added": 1384,
+      "final_train": 2667,
+      "methods": {
+        "gemini_flash": 267,
+        "local_lexical_paraphrase": 1,
+        "gemini_xlingual": 1116
+      },
+      "lang_added": {
+        "BNG": 718,
+        "BN": 666
+      }
+    },
+    "Disgust": {
+      "real_train": 2271,
+      "augmented_added": 396,
+      "final_train": 2667,
+      "methods": {
+        "gemini_flash": 396
+      },
+      "lang_added": {
+        "ENG": 270,
+        "BNG": 90,
+        "BN": 36
+      }
+    },
+    "Anticipation": {
+      "real_train": 2573,
+      "augmented_added": 94,
+      "final_train": 2667,
+      "methods": {
+        "gemini_flash": 94
+      },
+      "lang_added": {
+        "ENG": 94
+      }
+    }
+  },
+  "total_real_train": 20472,
+  "total_augmented": 3528,
+  "total_gemini_calls": 143,
+  "final_train_total": 24000
+}
