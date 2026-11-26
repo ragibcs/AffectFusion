@@ -5,7 +5,7 @@
 [![Transformers](https://img.shields.io/badge/HuggingFace-XLM--RoBERTa-yellow.svg)](https://huggingface.co/xlm-roberta-base)
 [![Hugging Face Dataset](https://img.shields.io/badge/HF%20Dataset-10.57967%2Fhf%2F11874-ff9d00.svg)](https://doi.org/10.57967/hf/11874)
 [![Zenodo](https://img.shields.io/badge/Zenodo-24543680-1682d4.svg)](https://zenodo.org/records/24543680?preview_file=affectfusion_dataset_v1.0.0.zip)
-[![Showcase Site](https://img.shields.io/badge/Website-affectfusion.site-1D7A6E.svg)](https://ragibcs.github.io/affectfusion.site/)
+[![Showcase Site](https://img.shields.io/badge/Website-affectfusionsite-1D7A6E.svg)](https://ragibcs.github.io/affectfusionsite/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Institution](https://img.shields.io/badge/Institution-Daffodil%20International%20University-00529B.svg)](https://daffodilvarsity.edu.bd/)
 
