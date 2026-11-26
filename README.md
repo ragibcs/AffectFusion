@@ -12,7 +12,7 @@
 Final Year Design Project (FYDP) — **Department of Computer Science and Engineering (CSE)**  
 **Daffodil International University (DIU), Dhaka, Bangladesh**
 
-- **Project Showcase Website:** [https://ragibcs.github.io/affectfusion.site/](https://ragibcs.github.io/affectfusion.site/)
+- **Project Showcase Website:** [https://ragibcs.github.io/affectfusionsite/](https://ragibcs.github.io/affectfusionsite/)
 - **Open Dataset (Hugging Face Hub):** [ragibhasan/AffectFusion](https://huggingface.co/datasets/ragibhasan/AffectFusion) · DOI: [`10.57967/hf/11874`](https://doi.org/10.57967/hf/11874)
 - **Permanent Archive (Zenodo):** [Record #24543680](https://zenodo.org/records/24543680?preview_file=affectfusion_dataset_v1.0.0.zip) · DOI: `10.5281/zenodo.24543680`
 
