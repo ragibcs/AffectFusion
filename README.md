@@ -160,7 +160,7 @@ To reproduce all Phase-I EDA charts and the 3-baseline evaluation suite on Googl
 
 ---
 
-## Next Phase Roadmap (Dec 2026 – Apr 2027)
+## Next Phase Roadmap (Dec 2026 – Feb 2027)
 
 - [ ] **Dual Encoders:** Fine-tuned `XLM-RoBERTa-base` text stream + `Emoji2Vec` / learned positional emoji semantic encoder (`d = 768`).
 - [ ] **Bidirectional Cross-Attention & Gated Fusion:** Explicit `Text → Emoji` and `Emoji → Text` multi-head cross-attention to suppress emoji-hijacking and capture ironic contradiction.
