@@ -1,0 +1,11 @@
+{
+  "source_dataset": "dair-ai/emotion (split=train, Twitter \u2014 non-GoEmotions)",
+  "split_restriction": "TRAIN_ONLY (platform == 'twitter_dair_emotion' MUST be excluded from Val & Test in Day 3)",
+  "verify_with_gemini": false,
+  "added_counts": {
+    "Fear": 1100,
+    "Surprise": 500
+  },
+  "total_added": 1600,
+  "saved_shard": "/content/drive/MyDrive/AffectFusion_Day2_Gemini/03_gemini_labeled_shards/gemini_w8_shard_00001.jsonl"
+}

@@ -1,0 +1,10 @@
+﻿,Annotator2_Joy,Annotator2_Neutral,Annotator2_Anger,Annotator2_Sadness,Annotator2_Surprise,Annotator2_Sarcasm,Annotator2_Fear,Annotator2_Disgust,Annotator2_Anticipation
+Annotator1_Joy,527,53,5,10,11,31,3,2,18
+Annotator1_Neutral,48,447,10,7,22,28,13,3,12
+Annotator1_Anger,9,14,556,20,7,56,7,82,3
+Annotator1_Sadness,9,8,16,482,5,11,8,12,7
+Annotator1_Surprise,17,26,8,1,322,27,9,4,0
+Annotator1_Sarcasm,30,14,40,5,9,436,5,21,4
+Annotator1_Fear,3,19,8,13,8,7,519,4,0
+Annotator1_Disgust,2,11,77,1,1,25,3,284,0
+Annotator1_Anticipation,25,18,5,5,0,4,1,0,417

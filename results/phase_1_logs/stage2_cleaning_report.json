@@ -1,0 +1,23 @@
+{
+  "completed_at": "2026-11-21T18:10:05.778747+00:00",
+  "input_rows": 60000,
+  "kept_rows": 59648,
+  "dropped_quality_or_spam": 324,
+  "dropped_post_clean_duplicate": 28,
+  "buckets": {
+    "BN_non_emoji": 5398,
+    "ENG_non_emoji": 7187,
+    "ENG_emoji": 16686,
+    "BNG_non_emoji": 5398,
+    "BNG_emoji": 12530,
+    "BN_emoji": 12449
+  },
+  "platforms": {
+    "news_rss": 81,
+    "reddit": 1704,
+    "mastodon": 581,
+    "youtube": 19574,
+    "youtube_api": 37662,
+    "lemmy": 46
+  }
+}

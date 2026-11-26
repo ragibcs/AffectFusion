@@ -1,0 +1,41 @@
+{
+  "paired_rows": 5000,
+  "agreements": 3990,
+  "disagreements": 1010,
+  "raw_agreement_pct": 79.8,
+  "cohens_kappa": 0.7717,
+  "krippendorff_alpha": 0.7717,
+  "landis_koch_interpretation": "Substantial",
+  "by_language": {
+    "ENG": {
+      "n": 1933,
+      "agreement_pct": 79.2,
+      "cohens_kappa": 0.7651,
+      "krippendorff_alpha": 0.7651
+    },
+    "BN": {
+      "n": 1653,
+      "agreement_pct": 82.94,
+      "cohens_kappa": 0.8052,
+      "krippendorff_alpha": 0.8052
+    },
+    "BNG": {
+      "n": 1414,
+      "agreement_pct": 76.94,
+      "cohens_kappa": 0.7377,
+      "krippendorff_alpha": 0.7378
+    }
+  },
+  "by_split": {
+    "test_3k": {
+      "n": 3000,
+      "agreement_pct": 78.03,
+      "cohens_kappa": 0.7515
+    },
+    "val_3k": {
+      "n": 2000,
+      "agreement_pct": 82.45,
+      "cohens_kappa": 0.8019
+    }
+  }
+}

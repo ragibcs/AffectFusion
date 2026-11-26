@@ -1,0 +1,44 @@
+{
+  "consensus_rows": 5000,
+  "unanimous_rows": 3990,
+  "adjudication_stats": {
+    "total_adjudicated": 1010,
+    "resolved_to_annotator1": 526,
+    "resolved_to_annotator2": 482,
+    "resolved_to_third_class": 2
+  },
+  "test_3k": {
+    "rows": 3000,
+    "double_verified": 3000,
+    "labels_changed_vs_r1": 472,
+    "class_counts": {
+      "Anger": 470,
+      "Joy": 392,
+      "Neutral": 385,
+      "Sarcasm": 367,
+      "Fear": 355,
+      "Sadness": 333,
+      "Anticipation": 273,
+      "Disgust": 218,
+      "Surprise": 207
+    }
+  },
+  "val_3k": {
+    "rows": 3000,
+    "double_verified": 2000,
+    "labels_changed_vs_r1": 264,
+    "class_counts": {
+      "Anger": 431,
+      "Neutral": 362,
+      "Joy": 348,
+      "Fear": 339,
+      "Sarcasm": 336,
+      "Sadness": 330,
+      "Surprise": 299,
+      "Anticipation": 291,
+      "Disgust": 264
+    }
+  },
+  "blind_heatmap_png": "/content/drive/MyDrive/AffectFusion_Day3/02_gold_verification/round2_blind_swap/human_vs_human_5k_agreement_matrix_blind.png",
+  "latex_table_tex": "/content/drive/MyDrive/AffectFusion_Day3/02_gold_verification/round2_blind_swap/table_iaa_5k_summary.tex"
+}
